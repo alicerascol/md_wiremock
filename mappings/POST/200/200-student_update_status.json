@@ -1,0 +1,21 @@
+{
+    "priority": 100,
+    "request": {
+        "method": "POST",
+        "url": "/updateStatus",
+        "bodyPatterns" : [
+            { "contains": "student_id" },
+            { "contains": "status" }
+        ]
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json",
+            "X-OpenIDM-NoSession": "true",
+            "X-OpenIDM-Username": "anonymous",
+            "X-OpenIDM-Password": "anonymous",
+            "Cache-Control": "no-cache"
+        }
+    }
+}
