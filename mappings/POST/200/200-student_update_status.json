@@ -5,7 +5,8 @@
         "url": "/updateStatus",
         "bodyPatterns" : [
             { "contains": "student_id" },
-            { "contains": "status" }
+            { "contains": "status" },
+            { "contains": "faculty_id" }
         ]
     },
     "response": {
